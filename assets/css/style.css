@@ -822,6 +822,16 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+/* ADDED PORTFOLIO REF LINK STYLE */
+/* not using data filters */
+.portfolio-ref-links {
+  color: black;
+}
+.portfolio-ref-links:hover {
+  color: #fff;
+}
+/* END OF ADDED STYLES FOR REF LINK BUTTONS */
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -1367,6 +1377,13 @@ section {
   text-transform: uppercase;
   font-weight: 600;
 }
+
+@media screen and (min-width: 1300px) {
+  .pricing .box {
+    margin-bottom: 30px;
+  }
+}
+  
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
