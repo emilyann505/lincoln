@@ -1766,6 +1766,21 @@ section {
   border-radius: 3px;
 } 
 
+#mc_embed_signup #mce-success-response {
+  color: #529214;
+  display: none;
+}
+
+#mc_embed_signup div#mce-responses {
+  float: left;
+  top: -1.4em;
+  padding: 0em 0.5em 0em 0.5em;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 5%;
+  clear: both;
+}
+
 .mailchimp-logo {
   display: flex;
   width: 30%;
