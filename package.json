@@ -1,0 +1,21 @@
+{
+  "name": "knight-lincoln",
+  "version": "1.0.0",
+  "description": "Thanks for downloading this template!",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilyann505/lincoln.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilyann505/lincoln/issues"
+  },
+  "homepage": "https://github.com/emilyann505/lincoln#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.28.1"
+  }
+}
