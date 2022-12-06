@@ -357,26 +357,17 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+/* get background image to work for mobile */
 #hero {
   display: flex;
   min-width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
   background-size: cover;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/lp-082622-001.jpg") no-repeat center center fixed !important;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;   
+    url("../img/lp-082622-001.jpg") no-repeat center center fixed !important;  
 }
-
-@media (min-width: 300px) {
-  #hero {
-    background-attachment: scroll;
-    background-size: 100% 100%;
-  }
-}
-
 
 #hero .hero-container {
   position: absolute;
