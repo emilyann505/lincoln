@@ -9,6 +9,7 @@
   <meta content="Record with Lincoln Parish in his Nashville Studio" name="description">
   <meta content="" name="keywords">
 
+  <link rel="preconnect" href="https://open.spotify.com/">
   <!-- Favicons -->
   <link href="assets/img/icons8-audio-wave-30.png" rel="icon">
   
@@ -28,8 +29,75 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
 
+  <style> 
+    #hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("assets/img/lp-hero-og-size.jpg") no-repeat center center;
+  background-size: cover;
+  filter: brightness(40%);
+}
+.hero-container {
+  margin-top: 30vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero h1 {
+  margin: 0px 0 30px 0;
+  font-size: 2.5em;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #fff;
+}
+
+#hero h2 {
+  color: #aeaeae;
+  margin-bottom: 30px;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#hero .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 3px;
+  margin: 10px;
+  color: #fff;
+  background: #7cc576;
+}
+
+#hero .btn-get-started:hover {
+  transition: 0.5s;
+  background: #fff;
+  color: #7cc576;
+}
+  </style>
   <!-- =======================================================
   * Template Name: Knight - v4.9.1
   * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
@@ -621,11 +689,11 @@
 </form>
 </div>
 
-<script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
+<script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js' defer>
 </script>
 
 <script>
-(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}
+(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';})
 </script>
 <!--End mc_embed_signup-->
           </div>
@@ -655,7 +723,8 @@
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         Developed by <a href="https://emilyclarkdeveloper.com">Emily Clark</a><br>
         Audiowave icons by <a target="_blank" href="https://icons8.com/icon/100634/audio-wave">Audio Wave</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br><p class="brandingLogo">Email subscription managed with Mailchimp<a href="http://eepurl.com/ifhFQf" title="Mailchimp - email marketing made easy and fun">
-          <img class="mailchimp-logo" src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" alt="mailchimp"></a></p>
+          <img class="mailchimp-logo" src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" 
+          loading="lazy" alt="mailchimp"></a></p>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -668,7 +737,7 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
