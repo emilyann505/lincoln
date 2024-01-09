@@ -289,7 +289,7 @@ h6 {
   left: 15px;
   padding: 10px 0;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
-    url("../img/lp-082622-016.jpg") no-repeat center center fixed;
+    url("../img/lp-082622-016.webp") no-repeat center center fixed;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -1074,7 +1074,7 @@ section {
 .testimonials {
   padding: 60px 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/lp-082622-016.jpg") no-repeat;
+    url("../img/lp-082622-016.webp") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1487,7 +1487,7 @@ section {
 }
 .contact-card-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-    url(../img/lp-082622-007.jpg) center center no-repeat;
+    url(../img/lp-082622-007.webp) center center no-repeat;
   padding: 20px;
   border-radius: 10px;
   color: #fff;
@@ -1604,7 +1604,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/lp-bw-01.jpg");
+  background: url("../img/lp-bw-01.webp");
   background-size: cover;
   color: #fff;
   font-size: 14px;
