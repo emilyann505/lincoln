@@ -81,7 +81,6 @@ h6 {
   height: 90px;
   transition: all 0.5s;
   z-index: 997;
-  transition: all 0.5s;
   background: #fff;
   box-shadow: 0 4px 10px -3px hsla(0deg, 0%, 75%, 0.5);
 }
@@ -289,7 +288,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
     url("../img/lp-082622-016.jpg") no-repeat center center fixed;
   overflow-y: auto;
   transition: 0.3s;
@@ -568,6 +567,10 @@ section {
   width: 100%;
   height: 100%;
 }
+.podcast-with-james {
+  width: 100%;
+  height: 100%;
+}
 .spotify-player {
   width: 100%;
   height: 380px;
@@ -580,6 +583,12 @@ section {
     display: flex;
   }
 }
+@media (min-width: 992px) {
+  figure {
+    width: 100%;
+  }
+}
+
 @-webkit-keyframes slide-down {
   0% {
     opacity: 0;
@@ -1595,7 +1604,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/lp-082622-006.jpg") center center no-repeat;
+  background: url("../img/lp-bw-01.jpg");
+  background-size: cover;
   color: #fff;
   font-size: 14px;
   position: relative;
@@ -1608,7 +1618,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
@@ -1802,7 +1812,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/lp-082622-019.jpg") no-repeat center center;
+  background: url("../img/lp-bw-3.jpg") no-repeat center center;
   background-size: cover;
   filter: brightness(20%);
 }
